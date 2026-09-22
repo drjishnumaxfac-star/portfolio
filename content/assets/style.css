@@ -100,12 +100,26 @@ nav{
 .h-rank{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;border:1px solid var(--bd2);padding:0.28rem 0.7rem;color:var(--dm)}
 .h-rank.gold{color:var(--ac);border-color:rgba(194,95,56,0.4)}
 .h-rank.gold-medal{
-  font-size:11.5px;padding:0.5rem 1.1rem;color:var(--ac);
-  background:rgba(194,95,56,0.10);
-  border:1px solid rgba(194,95,56,0.45);
+  font-size:11.5px;padding:0.5rem 1.1rem;
+  color:#C9A84C;
+  background:rgba(201,168,76,0.09);
+  border:1px solid rgba(201,168,76,0.38);
   -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-  box-shadow:0 2px 18px rgba(194,95,56,0.12);
+  box-shadow:0 2px 18px rgba(201,168,76,0.10);
 }
+.h-founder{
+  display:flex;align-items:center;gap:0.55rem;
+  margin-top:-1rem;margin-bottom:1.8rem;
+  opacity:0;transform:translateY(14px);
+  animation:fU 0.9s ease 0.68s forwards;
+}
+.h-founder-label{
+  font-family:'JetBrains Mono',monospace;font-size:9.5px;
+  letter-spacing:0.15em;text-transform:uppercase;color:var(--dm2);
+}
+.h-founder-logo{display:inline-flex;align-items:center;text-decoration:none;opacity:0.92;transition:opacity 0.2s}
+.h-founder-logo:hover{opacity:1}
+.h-founder-img{height:clamp(18px,2.2vw,30px);width:auto;display:block}
 .h-bar{width:3rem;height:2px;background:var(--ac);margin-bottom:1.6rem;opacity:0;animation:fI 0.5s ease 0.88s forwards}
 .h-desc{font-size:13.5px;line-height:1.9;color:var(--dm);max-width:46ch;margin-bottom:2.2rem;opacity:0;transform:translateY(12px);animation:fU 0.8s ease 0.98s forwards}
 .h-desc strong{color:var(--tx);font-weight:500}
