@@ -1,33 +1,200 @@
 [
-  { "loc": "/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "1.0" },
-  { "loc": "/clinical/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.95" },
-  { "loc": "/clinical/tmj-disorders.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.9" },
-  { "loc": "/clinical/oral-cancer.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.9" },
-  { "loc": "/clinical/dental-implants.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.85" },
-  { "loc": "/clinical/facial-trauma.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.85" },
-  { "loc": "/clinical/orthognathic-surgery.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.85" },
-  { "loc": "/clinical/jaw-reconstruction.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.85" },
-  { "loc": "/clinical/clear-aligners.html", "lastmod": "2026-09-22", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/clinical/snoring-sleep-apnea.html", "lastmod": "2026-09-22", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/clinical/pediatric-dental-trauma.html", "lastmod": "2026-09-22", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/clinical/dog-bite-management.html", "lastmod": "2026-09-22", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/clinical/wisdom-tooth-removal.html", "lastmod": "2026-09-22", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/clinical/patient-results.html", "lastmod": "2026-09-22", "changefreq": "monthly", "priority": "0.85" },
-  { "loc": "/projects/", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.9" },
-  { "loc": "/projects/patient-specific-peek-implants.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/projects/portable-suction-device.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/projects/drain-tube-retention-button.html", "lastmod": "2026-07-20", "changefreq": "yearly", "priority": "0.7" },
-  { "loc": "/projects/ryles-tube-nerve-sleeve.html", "lastmod": "2026-07-20", "changefreq": "yearly", "priority": "0.7" },
-  { "loc": "/projects/finger-mounted-intraoral-dissector.html", "lastmod": "2026-07-20", "changefreq": "yearly", "priority": "0.7" },
-  { "loc": "/about.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.7" },
-  { "loc": "/publications.html", "lastmod": "2026-07-20", "changefreq": "monthly", "priority": "0.7" },
-  { "loc": "/contact.html", "lastmod": "2026-07-20", "changefreq": "yearly", "priority": "0.5" },
-  { "loc": "/blog/", "lastmod": "2026-07-20", "changefreq": "weekly", "priority": "0.8" },
-  { "loc": "/locations/kochi/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.85" },
-  { "loc": "/locations/ernakulam/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/locations/edapally/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.8" },
-  { "loc": "/locations/kakkanad/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.75" },
-  { "loc": "/locations/palarivattom/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.75" },
-  { "loc": "/locations/thrissur/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.75" },
-  { "loc": "/locations/kottayam/", "lastmod": "2026-07-23", "changefreq": "monthly", "priority": "0.75" }
+  {
+    "loc": "/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "1.0"
+  },
+  {
+    "loc": "/clinical/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.95"
+  },
+  {
+    "loc": "/clinical/tmj-disorders.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.9"
+  },
+  {
+    "loc": "/clinical/oral-cancer.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.9"
+  },
+  {
+    "loc": "/clinical/dental-implants.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.85"
+  },
+  {
+    "loc": "/clinical/facial-trauma.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.85"
+  },
+  {
+    "loc": "/clinical/orthognathic-surgery.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.85"
+  },
+  {
+    "loc": "/clinical/jaw-reconstruction.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.85"
+  },
+  {
+    "loc": "/clinical/clear-aligners.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/clinical/snoring-sleep-apnea.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/clinical/pediatric-dental-trauma.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/clinical/dog-bite-management.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/clinical/wisdom-tooth-removal.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/clinical/patient-results.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "monthly",
+    "priority": "0.85"
+  },
+  {
+    "loc": "/projects/",
+    "lastmod": "2026-09-22",
+    "changefreq": "monthly",
+    "priority": "0.9"
+  },
+  {
+    "loc": "/projects/patient-specific-peek-implants.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/projects/portable-suction-device.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/projects/drain-tube-retention-button.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "yearly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "/projects/ryles-tube-nerve-sleeve.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "yearly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "/projects/finger-mounted-intraoral-dissector.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "yearly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "/about.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "/publications.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "/contact.html",
+    "lastmod": "2026-07-20",
+    "changefreq": "yearly",
+    "priority": "0.5"
+  },
+  {
+    "loc": "/blog/",
+    "lastmod": "2026-07-20",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/locations/kochi/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.85"
+  },
+  {
+    "loc": "/locations/ernakulam/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/locations/edapally/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "/locations/kakkanad/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.75"
+  },
+  {
+    "loc": "/locations/palarivattom/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.75"
+  },
+  {
+    "loc": "/locations/thrissur/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.75"
+  },
+  {
+    "loc": "/locations/kottayam/",
+    "lastmod": "2026-07-23",
+    "changefreq": "monthly",
+    "priority": "0.75"
+  },
+  {
+    "loc": "/legal/privacy-policy.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "yearly",
+    "priority": "0.3"
+  },
+  {
+    "loc": "/legal/terms-of-use.html",
+    "lastmod": "2026-09-22",
+    "changefreq": "yearly",
+    "priority": "0.3"
+  }
 ]

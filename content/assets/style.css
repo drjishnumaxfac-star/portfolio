@@ -34,6 +34,29 @@ nav{
 .nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}
 .nav-links a{font-size:10.5px;font-weight:400;letter-spacing:0.13em;text-transform:uppercase;color:var(--dm);text-decoration:none;cursor:pointer;transition:color 0.2s}
 .nav-links a:hover,.nav-links a.act{color:var(--tx)}
+
+/* ─ Nav dropdown ─ */
+.nav-links>li{position:relative}
+.nav-dropdown{
+  display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);
+  background:rgba(22,22,22,0.98);border:1px solid var(--bd2);
+  min-width:240px;padding:0.35rem 0;z-index:400;
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+}
+.nav-links>li:hover .nav-dropdown{display:block}
+.nav-dropdown li{list-style:none}
+.nav-dropdown a{
+  display:block;font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--dm);text-decoration:none;padding:0.55rem 1.2rem;
+  transition:color 0.15s,background 0.15s;white-space:nowrap;
+}
+.nav-dropdown a:hover,.nav-dropdown a.act{color:var(--tx);background:rgba(255,255,255,0.04)}
+/* mobile clinical sub */
+.nav-mob-sub{
+  padding-left:1.4rem;font-size:9.5px;letter-spacing:0.12em;color:var(--dm2);
+  border-bottom:1px solid var(--bd);padding-top:0.55rem;padding-bottom:0.55rem;
+}
+.nav-mob-sub:hover{color:var(--ac)}
 .nav-cta{font-size:10px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--tx);border:1px solid var(--bd2);padding:0.48rem 1.25rem;cursor:pointer;background:none;text-decoration:none;transition:border-color 0.2s,color 0.2s}
 .nav-cta:hover{border-color:var(--ac);color:var(--ac)}
 
@@ -119,7 +142,7 @@ nav{
 }
 .h-founder-logo{display:inline-flex;align-items:center;text-decoration:none;opacity:0.92;transition:opacity 0.2s}
 .h-founder-logo:hover{opacity:1}
-.h-founder-img{height:clamp(18px,2.2vw,30px);width:auto;display:block}
+.h-founder-img{height:clamp(30px,3.8vw,50px);width:auto;display:block}
 .h-bar{width:3rem;height:2px;background:var(--ac);margin-bottom:1.6rem;opacity:0;animation:fI 0.5s ease 0.88s forwards}
 .h-desc{font-size:13.5px;line-height:1.9;color:var(--dm);max-width:46ch;margin-bottom:2.2rem;opacity:0;transform:translateY(12px);animation:fU 0.8s ease 0.98s forwards}
 .h-desc strong{color:var(--tx);font-weight:500}
