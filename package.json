@@ -1,0 +1,15 @@
+{
+  "name": "doctorj-in",
+  "version": "1.0.0",
+  "private": true,
+  "description": "doctorj.in — static site + Eleventy-built blog, edited via Decap CMS",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "luxon": "^3.4.4"
+  }
+}

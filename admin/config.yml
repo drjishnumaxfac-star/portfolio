@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Shows a preview of the actual live URL after publishing.
+site_url: https://doctorj.in
+display_url: https://doctorj.in
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "blog/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Category", name: "category", widget: "string", default: "Studio Notes", hint: "Shown as the eyebrow label on the blog card, e.g. 'Studio Notes'" }
+      - { label: "Meta Description", name: "description", widget: "string", hint: "Used for the card preview, SEO meta description, and social share preview. Keep it under ~160 characters." }
+      - { label: "Body", name: "body", widget: "markdown" }

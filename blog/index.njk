@@ -1,0 +1,39 @@
+---
+title: Blog — Studio Journal by Dr. Jishnu Mohan
+description: A running log of the problems, prototypes, and lessons behind each surgical device, updated regularly by Dr. Jishnu Mohan.
+permalink: /blog/index.html
+eleventyExcludeFromCollections: true
+---
+{% extends "layouts/base.njk" %}
+
+{% block extraHead %}
+{%- set blogBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": site.url + "/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": site.url + "/blog/"}
+  ]
+} %}
+<script type="application/ld+json">{{ blogBreadcrumb | dump | safe }}</script>
+{%- set blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": site.url + "/blog/#blog",
+  "name": "Studio Journal — " + site.name,
+  "url": site.url + "/blog/",
+  "author": {"@id": site.url + "/#person"},
+  "publisher": {"@id": site.url + "/#organization"}
+} %}
+<script type="application/ld+json">{{ blogSchema | dump | safe }}</script>
+{% endblock %}
+
+{% block content %}
+  <div class="s-wrap" style="padding-top:9rem">
+    <div class="ph"><div><p class="s-eye rv">Studio Journal</p><h1 class="s-head rv d1" style="font-size:clamp(3.5rem,9vw,9rem)">The <em>Blog.</em></h1></div><a class="ph-link rv d2" href="/">← Home</a></div>
+    {%- set posts = collections.posts %}
+    {%- for post in posts %}
+    <a class="pr rv" href="{{ post.url }}"><span class="pr-n">{{ (loop.index) | pad2 }}</span><div><p class="pr-cat">{{ post.data.category | default("Studio Notes") }} &middot; {{ post.date | readableDate }}</p><h3 class="pr-name">{{ post.data.title }}</h3><p class="pr-desc">{{ post.data.description }}</p></div><span class="pr-link">Read →</span></a>
+    {%- endfor %}
+  </div>
+{% endblock %}

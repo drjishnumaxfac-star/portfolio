@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="author" content="{{ site.name }}">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="{{ site.themeColor }}">
+
+<meta property="og:type" content="{{ ogType | default('website') }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.siteName }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="{{ ogImage | default(site.ogImage) }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ ogImage | default(site.ogImage) }}">
+
+<link rel="preload" href="/fonts/playfair-display-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+
+{%- block extraHead %}{% endblock -%}
+</head>
+<body>
+<!-- NAV -->
+<nav id="mnav">
+  <a class="nav-brand" href="/">
+    <span class="nav-dot"></span>{{ site.name }}
+  </a>
+  <ul class="nav-links">
+    {%- for item in site.nav %}
+    <li><a href="{{ item.href }}" data-p="{{ item.key }}">{{ item.label }}</a></li>
+    {%- endfor %}
+  </ul>
+  <a class="nav-cta" href="mailto:{{ site.emailObfuscated | safe }}">Collaborate</a>
+  <div class="nav-ham" id="ham" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="nav-mob" id="nav-mob">
+  {%- for item in site.nav %}
+  <a href="{{ item.href }}" onclick="toggleMob()">{{ item.label }}</a>
+  {%- endfor %}
+  <a href="mailto:{{ site.emailObfuscated | safe }}" style="color:var(--ac)" onclick="toggleMob()">Collaborate ↗</a>
+</div>
+
+<main>
+{%- block content %}{% endblock -%}
+</main>
+
+<footer class="site-footer">
+  <div class="ftr-top">
+    <div class="ftr-col ftr-brand">
+      <a class="ftr-logo" href="/"><span class="nav-dot"></span>{{ site.name }}</a>
+      <p class="ftr-tag">Oral &amp; Maxillofacial Surgeon &middot; Head &amp; Neck Surgical Oncologist<br>Kochi, Kerala, India</p>
+      <div class="ftr-social" aria-label="Social links">
+        <a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a>
+        <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ site.googleBusiness }}" target="_blank" rel="noopener">Google Reviews ★</a>
+      </div>
+    </div>
+    <div class="ftr-col">
+      <p class="ftr-h">Site</p>
+      {%- for item in site.nav %}
+      <a href="{{ item.href }}">{{ item.label }}</a>
+      {%- endfor %}
+    </div>
+    <div class="ftr-col">
+      <p class="ftr-h">Locations</p>
+      {%- for loc in site.footerLocations %}
+      <a href="{{ loc.href }}">{{ loc.label }}</a>
+      {%- endfor %}
+    </div>
+    <div class="ftr-col">
+      <p class="ftr-h">Consultation</p>
+      <p class="ftr-addr">{{ site.address | safe }}</p>
+      <a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a>
+      <a href="mailto:{{ site.emailObfuscated | safe }}">Email</a>
+    </div>
+  </div>
+  <div class="ftr-bottom">
+    <p>&copy; {{ currentYear }} {{ site.name }}. All rights reserved.</p>
+    <div class="ftr-legal">
+      <a href="/legal/privacy-policy.html">Privacy Policy</a>
+      <a href="/legal/terms-of-use.html">Terms of Use</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+    <p class="ftr-credit">Designed &amp; built by <a href="https://drjdesignstudio.com/" target="_blank" rel="noopener">Dr J Design Studio</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js"></script>
+</body>
+</html>

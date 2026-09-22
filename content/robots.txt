@@ -1,0 +1,120 @@
+User-agent: *
+Allow: /
+Disallow: /legal/
+Disallow: /admin/
+
+# Bing / Yahoo / MSN
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# ── AI search / assistant / LLM crawlers ──────────────────────────────────────
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI / Gemini
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# xAI Grok
+User-agent: Grok
+Allow: /
+
+User-agent: xAI
+Allow: /
+
+# Microsoft Copilot / Bing AI
+User-agent: bingbot
+Allow: /
+
+User-agent: MicrosoftPreview
+Allow: /
+
+# Meta Llama / Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Apple (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl (training data used by many open-source LLMs)
+User-agent: CCBot
+Allow: /
+
+# Diffbot
+User-agent: Diffbot
+Allow: /
+
+# Bytedance / Bytespider (used by Doubao, Coze, etc.)
+User-agent: Bytespider
+Allow: /
+
+# Brave Search (Leo AI)
+User-agent: BraveBot
+Allow: /
+
+# Liner AI
+User-agent: Liner
+Allow: /
+
+Sitemap: https://doctorj.in/sitemap.xml
