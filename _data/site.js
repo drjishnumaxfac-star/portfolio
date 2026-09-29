@@ -25,7 +25,7 @@ module.exports = {
     image: "https://doctorj.in/images/hero.jpg",
     jobTitle: "Oral & Maxillofacial Surgeon",
     description:
-      "Surgeon-scientist and medical technology innovator designing instruments, implants, and devices for resource-limited surgical care.",
+      "Oral & Maxillofacial Surgeon in Kochi with clinical interests in advanced implantology, TMJ disorders, orofacial pain, jaw reconstruction, facial trauma and head & neck surgical oncology.",
     medicalSpecialty: [
       "Oral and Maxillofacial Surgery",
       "Head and Neck Surgical Oncology",
