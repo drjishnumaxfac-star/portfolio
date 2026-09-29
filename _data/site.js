@@ -1,7 +1,7 @@
 module.exports = {
   url: "https://doctorj.in",
   name: "Dr. Jishnu Mohan",
-  siteName: "Dr. Jishnu Mohan — Surgical Design Studio",
+  siteName: "Dr. Jishnu Mohan | Oral & Maxillofacial Surgeon, Kochi",
   themeColor: "#191919",
   ogImage: "https://doctorj.in/images/og-share.jpg",
   email: "drjishnumaxcfac@gmail.com",
@@ -12,18 +12,18 @@ module.exports = {
   instagram: "https://www.instagram.com/dr.j__________/",
   linkedin: "https://www.linkedin.com/in/dr-jishnu-mohan-8881233a0/",
   googleBusiness: "https://share.google/tDS4gSuJcUU8MErWE",
-  reviewCount: "105",
+  reviewCount: "100+",
   reviewRating: "5.0",
 
   // Schema fragments — reused so Person/Organization data lives in one place
   // instead of being duplicated inside every page's <script type="application/ld+json">.
   personSchema: {
     "@type": "Person",
-    "@id": "https://doctorj.in/#person",
+    "@id": "https://doctorj.in/#doctor",
     name: "Dr. Jishnu Mohan",
     url: "https://doctorj.in/",
     image: "https://doctorj.in/images/hero.jpg",
-    jobTitle: "Consultant Head and Neck Surgical Oncologist",
+    jobTitle: "Oral & Maxillofacial Surgeon",
     description:
       "Surgeon-scientist and medical technology innovator designing instruments, implants, and devices for resource-limited surgical care.",
     medicalSpecialty: [
