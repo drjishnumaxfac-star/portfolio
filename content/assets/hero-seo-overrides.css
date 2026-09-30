@@ -1,0 +1,50 @@
+/* Hero SEO presentation overrides — preserves the existing dark editorial design. */
+.h-quote{max-width:34ch}
+.h-ranks{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.65rem;
+  width:100%;
+  max-width:920px;
+  align-items:stretch;
+}
+.h-rank{
+  min-width:0;
+  min-height:96px;
+  height:96px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:.25rem;
+  padding:.75rem .9rem;
+  line-height:1.35;
+  overflow:hidden;
+}
+.h-rank.rank-aiims{color:#D97850;border-color:rgba(194,95,56,.42);background:rgba(194,95,56,.035)}
+.h-rank.rank-pgi{color:#C9A84C;border-color:rgba(201,168,76,.40);background:rgba(201,168,76,.055)}
+.h-rank.rank-tmc{color:#B9B5AE;border-color:rgba(239,235,227,.18);background:rgba(239,235,227,.025)}
+.h-rank .rank-kicker{font-size:9px;letter-spacing:.15em;color:var(--dm);line-height:1.2}
+.h-rank strong{font-size:14px;letter-spacing:.08em;color:var(--tx);font-weight:600;line-height:1.15}
+.h-rank .rank-detail{font-size:8px;letter-spacing:.08em;color:var(--dm);line-height:1.35}
+.h-founder-logo{perspective:600px;transform-style:preserve-3d}
+.h-founder-img{transform-origin:50% 55%;animation:sketchRootMicroTilt 4.2s ease-in-out infinite;will-change:transform}
+.h-founder-logo:hover .h-founder-img{animation-play-state:paused;transform:rotateX(0deg) rotateY(0deg) scale(1.035)}
+@keyframes sketchRootMicroTilt{
+  0%,100%{transform:rotateX(0deg) rotateY(-1.2deg) translateY(0)}
+  25%{transform:rotateX(1.1deg) rotateY(1.5deg) translateY(-1px)}
+  50%{transform:rotateX(-.8deg) rotateY(.8deg) translateY(0)}
+  75%{transform:rotateX(.7deg) rotateY(-1.6deg) translateY(-1px)}
+}
+@media(max-width:1100px) and (min-width:961px){
+  .h-rank{min-height:104px;height:104px;padding:.7rem .7rem}
+  .h-rank strong{font-size:12px}
+  .h-rank .rank-detail{font-size:7.5px}
+}
+@media(max-width:960px){
+  .h-ranks{grid-template-columns:1fr;max-width:520px;gap:.5rem}
+  .h-rank{height:auto;min-height:76px}
+  .h-rank .rank-detail{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  .h-founder-img{animation:none}
+}
