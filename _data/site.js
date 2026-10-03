@@ -4,9 +4,9 @@ module.exports = {
   siteName: "Dr. Jishnu Mohan | Oral & Maxillofacial Surgeon, Kochi",
   themeColor: "#191919",
   ogImage: "https://doctorj.in/images/og-share.jpg",
-  email: "drjishnumaxcfac@gmail.com",
+  email: "drjishnumaxfac@gmail.com",
   emailObfuscated:
-    "&#100;&#114;&#106;&#105;&#115;&#104;&#110;&#117;&#109;&#97;&#120;&#99;&#102;&#97;&#99;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;",
+    "&#100;&#114;&#106;&#105;&#115;&#104;&#110;&#117;&#109;&#97;&#120;&#102;&#97;&#99;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;",
   phone: "+91 8848 026 261",
   phoneHref: "+918848026261",
   instagram: "https://www.instagram.com/dr.j__________/",
@@ -48,7 +48,7 @@ module.exports = {
       { "@type": "CollegeOrUniversity", name: "Rajiv Gandhi University of Health Sciences" },
     ],
     email:
-      "mailto:&#100;&#114;&#106;&#105;&#115;&#104;&#110;&#117;&#109;&#97;&#120;&#99;&#102;&#97;&#99;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;",
+      "mailto:&#100;&#114;&#106;&#105;&#115;&#104;&#110;&#117;&#109;&#97;&#120;&#102;&#97;&#99;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;",
     telephone: "+91-8848-026-261",
     sameAs: [
       "https://www.linkedin.com/in/dr-jishnu-mohan-8881233a0/",
