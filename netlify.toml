@@ -4,3 +4,20 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+
+# Short booking links for Google Business Profile, Instagram, print, etc.
+# Each one lands on the consultation form and tags the enquiry with its source.
+[[redirects]]
+  from = "/book"
+  to = "/contact.html?src=gbp#book"
+  status = 302
+
+[[redirects]]
+  from = "/book/*"
+  to = "/contact.html?src=:splat#book"
+  status = 302

@@ -184,17 +184,5 @@
     "lastmod": "2026-07-23",
     "changefreq": "monthly",
     "priority": "0.75"
-  },
-  {
-    "loc": "/legal/privacy-policy.html",
-    "lastmod": "2026-09-22",
-    "changefreq": "yearly",
-    "priority": "0.3"
-  },
-  {
-    "loc": "/legal/terms-of-use.html",
-    "lastmod": "2026-09-22",
-    "changefreq": "yearly",
-    "priority": "0.3"
   }
 ]

@@ -1,6 +1,17 @@
+# Login is done with your GitHub account (no Netlify Identity / Git Gateway needed;
+# Netlify has deprecated both). One-time setup is described in README.md under
+# "Fixing /admin login".
 backend:
-  name: git-gateway
+  name: github
+  repo: drjishnumaxfac-star/portfolio
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+# When you run "npx decap-server" next to "npm run serve", the CMS at
+# http://localhost:8080/admin/ edits the local files directly (no login needed).
+# This flag is ignored on the live site.
+local_backend: true
 
 # Shows a preview of the actual live URL after publishing.
 site_url: https://doctorj.in
@@ -23,6 +34,28 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
-      - { label: "Category", name: "category", widget: "string", default: "Studio Notes", hint: "Shown as the eyebrow label on the blog card, e.g. 'Studio Notes'" }
+      - { label: "Last Updated", name: "updated", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false, hint: "Optional. Shown on the article and used as dateModified for search engines." }
+      - { label: "Category", name: "category", widget: "string", default: "Studio Notes", hint: "Shown as the eyebrow label on the blog card, e.g. 'Clinical Notes'" }
       - { label: "Meta Description", name: "description", widget: "string", hint: "Used for the card preview, SEO meta description, and social share preview. Keep it under ~160 characters." }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false, hint: "Shown at the top of the article and used for WhatsApp / Google / social previews if no separate share image is set. Square or 16:9 works." }
+      - { label: "Cover Image Alt Text", name: "imageAlt", widget: "string", required: false, hint: "Describe the image in one sentence (accessibility and image SEO)." }
+      - { label: "Keywords", name: "keywords", widget: "string", required: false, hint: "Comma separated search phrases this article targets." }
+      - label: "FAQ (adds FAQ rich results and AI-answer markup)"
+        name: "faq"
+        widget: "list"
+        required: false
+        summary: "{{fields.q}}"
+        fields:
+          - { label: "Question", name: "q", widget: "string" }
+          - { label: "Answer", name: "a", widget: "text", hint: "Plain text, 1 to 3 sentences, answer first." }
+      - label: "References (PubMed)"
+        name: "references"
+        widget: "list"
+        required: false
+        summary: "{{fields.n}}. {{fields.text}}"
+        fields:
+          - { label: "Number", name: "n", widget: "number", value_type: "int", min: 1 }
+          - { label: "Citation text", name: "text", widget: "text" }
+          - { label: "PubMed ID (PMID)", name: "pmid", widget: "string" }
+          - { label: "DOI", name: "doi", widget: "string", hint: "e.g. 10.1093/ejo/cjaf091 (no https://doi.org/ prefix)" }
+      - { label: "Body", name: "body", widget: "markdown", hint: "Cite references in the text as [<a href=\"#ref-1\">1</a>] or plain [1]." }
