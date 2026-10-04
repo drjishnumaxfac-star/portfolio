@@ -26,15 +26,10 @@
 .h-rank .rank-kicker{font-size:9px;letter-spacing:.15em;color:var(--dm);line-height:1.2}
 .h-rank strong{font-size:14px;letter-spacing:.08em;color:var(--tx);font-weight:600;line-height:1.15}
 .h-rank .rank-detail{font-size:8px;letter-spacing:.08em;color:var(--dm);line-height:1.35}
-.h-founder-logo{perspective:600px;transform-style:preserve-3d}
-.h-founder-img{transform-origin:50% 55%;animation:sketchRootMicroTilt 4.2s ease-in-out infinite;will-change:transform}
-.h-founder-logo:hover .h-founder-img{animation-play-state:paused;transform:rotateX(0deg) rotateY(0deg) scale(1.035)}
-@keyframes sketchRootMicroTilt{
-  0%,100%{transform:rotateX(0deg) rotateY(-1.2deg) translateY(0)}
-  25%{transform:rotateX(1.1deg) rotateY(1.5deg) translateY(-1px)}
-  50%{transform:rotateX(-.8deg) rotateY(.8deg) translateY(0)}
-  75%{transform:rotateX(.7deg) rotateY(-1.6deg) translateY(-1px)}
-}
+/* SketchRoot logo: mouse/gyroscope-driven 3D tilt (same behaviour as sketchroot.com's header logo) */
+.h-founder-logo{display:inline-block;line-height:0}
+.h-founder-img{will-change:transform;transition:transform .08s linear;transform-origin:50% 50%}
+.h-founder-logo:hover .h-founder-img{filter:brightness(1.08)}
 @media(max-width:1100px) and (min-width:961px){
   .h-rank{min-height:104px;height:104px;padding:.7rem .7rem}
   .h-rank strong{font-size:12px}
@@ -46,5 +41,8 @@
   .h-rank .rank-detail{font-size:8px}
 }
 @media(prefers-reduced-motion:reduce){
-  .h-founder-img{animation:none}
+  .h-founder-img{transition:none}
 }
+
+.h-rank .rank-gold{font-size:20px;font-weight:700;letter-spacing:.06em;color:#C9A84C;line-height:1.1}
+@media(max-width:900px){.h-rank .rank-gold{font-size:17px}}

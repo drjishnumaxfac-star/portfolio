@@ -60,3 +60,29 @@ Right now Decap only manages the blog. If you later want e.g. the clinical FAQ a
 or reviews editable too, that means converting those specific pages into Eleventy
 templates with data files — deliberately not done here, to avoid touching the 24 pages
 that already work and are indexed.
+
+## Fixing /admin login (October 2026)
+
+Netlify Identity and Git Gateway are deprecated, so `/admin` now signs in with GitHub instead
+(`backend: github` in `admin/config.yml`). One-time setup, about 5 minutes:
+
+1. GitHub → Settings → Developer settings → OAuth Apps → **New OAuth App**.
+   - Homepage URL: `https://doctorj.in`
+   - Authorization callback URL: `https://api.netlify.com/auth/done`
+2. Copy the **Client ID** and generate a **Client Secret**.
+3. Netlify → Site configuration → Access & security → **OAuth** → *Install provider* → GitHub →
+   paste the Client ID and Secret.
+4. Open `https://doctorj.in/admin/` → *Login with GitHub*. The account must have write access to
+   `drjishnumaxfac-star/portfolio`.
+
+Posts you publish are committed to `blog/posts/` on `main`; Netlify rebuilds automatically.
+
+### Previewing locally (before pushing)
+
+```
+npm install
+npx decap-server          # terminal 1: lets /admin edit local files, no login
+npm run serve             # terminal 2: site at http://localhost:8080
+```
+
+Then open `http://localhost:8080/` and `http://localhost:8080/admin/`.
