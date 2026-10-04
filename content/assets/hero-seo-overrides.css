@@ -46,3 +46,32 @@
 
 .h-rank .rank-gold{font-size:20px;font-weight:700;letter-spacing:.06em;color:#C9A84C;line-height:1.1}
 @media(max-width:900px){.h-rank .rank-gold{font-size:17px}}
+
+/* SketchRoot logo: letters hop around confused, reshuffle, settle into "SketchRoot"; the two o's are eyes that look around and blink */
+.sr-logo{overflow:visible}
+.sr-g{transform-box:fill-box;transform-origin:center;animation:sr-shuffle 10s infinite;animation-delay:calc(var(--i)*60ms)}
+@keyframes sr-shuffle{
+  0%,44%{transform:translate(0,0) rotate(0);animation-timing-function:cubic-bezier(.34,1.56,.64,1)}
+  52%{transform:translate(var(--x1),var(--y1)) rotate(var(--r1));animation-timing-function:cubic-bezier(.34,1.56,.64,1)}
+  60%{transform:translate(var(--x2),var(--y2)) rotate(var(--r2));animation-timing-function:cubic-bezier(.34,1.56,.64,1)}
+  68%{transform:translate(var(--x3),var(--y3)) rotate(var(--r3));animation-timing-function:cubic-bezier(.34,1.56,.64,1)}
+  80%,100%{transform:translate(0,0) rotate(0)}
+}
+.sr-eye{transform-box:fill-box;transform-origin:center;animation:sr-blink 3.6s infinite}
+@keyframes sr-blink{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+.sr-pupil{animation:sr-look 10s infinite}
+@keyframes sr-look{
+  0%,4%{transform:translate(0,0)}
+  9%,15%{transform:translate(-6px,-1px)}
+  20%,26%{transform:translate(6px,-2px)}
+  31%,36%{transform:translate(-3px,5px)}
+  41%,45%{transform:translate(0,0)}
+  50%{transform:translate(6px,-5px)}
+  54%{transform:translate(-6px,4px)}
+  58%{transform:translate(5px,5px)}
+  62%{transform:translate(-5px,-5px)}
+  66%{transform:translate(6px,1px)}
+  70%{transform:translate(-6px,-1px)}
+  80%,100%{transform:translate(0,0)}
+}
+@media(prefers-reduced-motion:reduce){.sr-g,.sr-eye,.sr-pupil{animation:none}}
