@@ -46,3 +46,14 @@
 
 .h-rank .rank-gold{font-size:20px;font-weight:700;letter-spacing:.06em;color:#C9A84C;line-height:1.1}
 @media(max-width:900px){.h-rank .rank-gold{font-size:17px}}
+
+/* SketchRoot logo: continuous scatter-and-reassemble loop (each glyph drifts apart, then snaps back) */
+.sr-logo{overflow:visible}
+.sr-g{transform-box:fill-box;transform-origin:center;animation:sr-jumble 7s cubic-bezier(.65,0,.35,1) infinite;animation-delay:calc(var(--i)*70ms)}
+@keyframes sr-jumble{
+  0%,38%{transform:translate(0,0) rotate(0)}
+  52%,64%{transform:translate(var(--dx),var(--dy)) rotate(var(--r))}
+  80%,100%{transform:translate(0,0) rotate(0)}
+}
+.h-founder-logo:hover .sr-g{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.sr-g{animation:none}}
