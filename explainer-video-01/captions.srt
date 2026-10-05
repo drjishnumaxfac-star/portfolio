@@ -1,0 +1,207 @@
+1
+00:00:01,000 --> 00:00:03,865
+Perioperative management of the diabetic patient.
+
+2
+00:00:04,715 --> 00:00:11,644
+A paper explained. By Yoo and Serafin, in Oral and Maxillofacial Surgery Clinics of North America, two thousand six.
+
+3
+00:00:13,194 --> 00:00:15,922
+First, the basics. What exactly is diabetes?
+
+4
+00:00:17,922 --> 00:00:23,048
+Diabetes is a chronic disease. The body is unable to process blood glucose properly.
+
+5
+00:00:23,768 --> 00:00:28,791
+It is classified as insulin-dependent, or type one, and non-insulin-dependent, or type two.
+
+6
+00:00:29,511 --> 00:00:36,843
+In type one, there is a defect in insulin secretion by the pancreatic beta cells, usually secondary to autoimmune destruction.
+
+7
+00:00:37,563 --> 00:00:44,379
+Type two is characterized by peripheral insulin resistance, with an insulin-secretory defect that varies in severity.
+
+8
+00:00:45,099 --> 00:00:51,090
+Diabetes is common: six percent of Americans younger than fifty, and ten to fifteen percent of those older.
+
+9
+00:00:51,810 --> 00:00:59,349
+More diabetic patients are presenting to the oral surgeon's office. And they have a fifty percent chance of undergoing surgery in their lifetime.
+
+10
+00:01:00,669 --> 00:01:04,025
+Chapter two. Type one diabetes, and the role of insulin.
+
+11
+00:01:06,025 --> 00:01:13,296
+Type one is the autoimmune destruction of the pancreatic islet beta cells, so the body loses its ability to secrete insulin.
+
+12
+00:01:14,016 --> 00:01:20,450
+It is sometimes called juvenile-onset diabetes, because it manifests most commonly in childhood or adolescence.
+
+13
+00:01:21,170 --> 00:01:28,274
+Insulin is synthesized in the pancreatic beta cells, and its primary function is the regulation of glucose metabolism.
+
+14
+00:01:28,994 --> 00:01:35,280
+But it does more. Insulin is also used in glycogen synthesis, lipogenesis, DNA synthesis, and growth.
+
+15
+00:01:36,000 --> 00:01:42,322
+Without insulin, glucose cannot be transported into cells and adipose tissue. The result is hyperglycemia.
+
+16
+00:01:43,042 --> 00:01:52,114
+Hyperglycemia is a fasting glucose above one hundred twenty-six milligrams per deciliter, and it can lead to ketoacidosis and severe metabolic abnormalities.
+
+17
+00:01:52,834 --> 00:01:57,972
+Type one patients depend on exogenous insulin, because they cannot produce it themselves.
+
+18
+00:01:58,692 --> 00:02:06,825
+The available preparations are rapid-acting, such as lispro; short-acting, regular and Lente; intermediate-acting, NPH; and long-acting, Ultralente.
+
+19
+00:02:07,545 --> 00:02:14,477
+Standard therapy is one to two injections per day of intermediate or long-acting insulin, with or without regular or lispro.
+
+20
+00:02:15,197 --> 00:02:23,903
+Intensive therapy means three or more injections daily: regular or lispro before meals, NPH at bedtime, or continuous subcutaneous infusion.
+
+21
+00:02:24,623 --> 00:02:31,507
+Calculating the dose still remains empiric. Generally, type one patients need half a unit to one unit per kilogram per day.
+
+22
+00:02:32,827 --> 00:02:35,059
+Chapter three. Type two diabetes.
+
+23
+00:02:37,059 --> 00:02:41,796
+Type two diabetes is found typically in adults older than thirty-five years of age.
+
+24
+00:02:42,516 --> 00:02:51,210
+It is a complex metabolic disorder: decreased pancreatic insulin secretion, plus insulin resistance in target tissues, mainly muscle and the liver.
+
+25
+00:02:51,930 --> 00:02:55,591
+Obesity and a sedentary lifestyle are two known risk factors.
+
+26
+00:02:56,911 --> 00:03:00,386
+Chapter four. Before surgery, the preoperative evaluation.
+
+27
+00:03:02,386 --> 00:03:14,352
+The surgeon should contact the patient's physician, to determine the level of diabetes control and any complications: renal function, heart disease, autonomic neuropathy, or a history of DKA or HHNK
+
+28
+00:03:15,072 --> 00:03:21,938
+The surgeon should also determine the medication regimen: the name, the dosage, the time it is taken, and the patient's compliance.
+
+29
+00:03:22,658 --> 00:03:33,566
+Cardiac evaluation should include an EKG These patients often have hypercholesterolemia, hypertension, macrovascular disease and neuropathy, so the risk for silent ischemia is higher.
+
+30
+00:03:34,286 --> 00:03:44,598
+If ischemic changes are seen on the EKG, or the history suggests coronary artery disease, a stress test should be performed. A cardiology consultation may also be required.
+
+31
+00:03:45,318 --> 00:03:56,144
+Renal function should be evaluated, as diabetic patients are susceptible to renal failure. Check serum urea nitrogen and creatinine, and screen for microalbuminuria and proteinuria.
+
+32
+00:03:56,864 --> 00:04:05,429
+Hypertension should be identified and treated. If the patient already takes antihypertensive medication, it should be continued throughout the perioperative period.
+
+33
+00:04:06,149 --> 00:04:16,934
+Now the autonomic nervous system. Diabetic autonomic neuropathy is linked to silent myocardial infarction, cardiac dysrhythmias, ulcerations, gangrene, and an increased risk for sudden death.
+
+34
+00:04:17,654 --> 00:04:25,714
+Clinically, it may show up as postural hypotension, resting tachycardia, and a lack of heart-rate variability with deep respiration or exercise.
+
+35
+00:04:26,434 --> 00:04:38,165
+Some patients develop diabetic gastroparesis. Heartburn or acid reflux when lying supine may indicate delayed gastric emptying, raising the risk of vomiting and aspiration during general anesthesia.
+
+36
+00:04:38,885 --> 00:04:51,137
+Pre-operative labs should include a complete blood count and chemistry panel. A chest radiograph is usually unnecessary in healthy patients, but with risk factors such as smoking, it must be done before general anesthesia.
+
+37
+00:04:52,457 --> 00:04:56,194
+Chapter five. Type two diabetes, controlled by diet alone.
+
+38
+00:04:58,194 --> 00:05:04,454
+Now, the management of type two patients, before and during surgery. First, those controlled by diet alone.
+
+39
+00:05:05,174 --> 00:05:13,712
+After careful evaluation, if diabetes is well controlled by diet, the type and extent of the procedure, and the nature of the anesthesia, must be considered.
+
+40
+00:05:14,432 --> 00:05:23,891
+If the procedure is minor, and the fasting glucose that morning is at an acceptable level, two hundred milligrams per deciliter or less, no further modification is necessary.
+
+41
+00:05:24,611 --> 00:05:35,276
+A major procedure means general anesthesia for over an hour. For that, or a preoperative glucose above two hundred, hourly intraoperative monitoring is indicated, and insulin is necessary.
+
+42
+00:05:35,996 --> 00:05:44,719
+Because the stress of surgery and anesthesia can contribute to hyperglycemia, previously stable diabetics may require insulin therapy intraoperatively.
+
+43
+00:05:45,439 --> 00:05:56,359
+Whether managed with small subcutaneous doses or an insulin infusion, these patients are no longer under the type two protocol. Management should now be converted to that of the type one diabetic.
+
+44
+00:05:57,679 --> 00:06:01,916
+Chapter six. Type two diabetes, on oral hypoglycemic agents.
+
+45
+00:06:03,916 --> 00:06:11,895
+Generally, oral hypoglycemics are discontinued before surgery. The specific class of medication determines how long it should be withheld.
+
+46
+00:06:12,615 --> 00:06:22,088
+First-generation sulfonylureas should be discontinued approximately three days before surgery. These long-acting agents include tolazamide and chlorpropamide.
+
+47
+00:06:22,808 --> 00:06:29,907
+Second-generation sulfonylureas, such as glyburide, glipizide and glimepiride, can continue until the morning of surgery.
+
+48
+00:06:30,627 --> 00:06:37,552
+Thiazolidinediones and metformin should be stopped the night before surgery, because of the risk of drug-induced lactic acidosis.
+
+49
+00:06:38,272 --> 00:06:46,414
+As with diet-controlled diabetes, blood glucose should be monitored preoperatively, and intraoperative glucose levels checked in the same situations.
+
+50
+00:06:47,134 --> 00:06:59,534
+For minor procedures, a sliding scale of subcutaneous insulin can be used, emphasizing prevention of hypoglycemia. For perioperative hyperglycemia of two hundred to three hundred, four to six units of insulin.
+
+51
+00:07:01,404 --> 00:07:12,320
+To recap. Assess diabetes control and complications. Screen the heart, kidneys, and autonomic function. Hold oral agents by class. Monitor glucose closely, and be ready to convert to insulin.
+
+52
+00:07:13,220 --> 00:07:17,914
+That was episode one. For education only; always follow your local protocols.

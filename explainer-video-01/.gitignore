@@ -1,0 +1,4 @@
+out/
+build/audio/
+build/__pycache__/
+build/*.log
