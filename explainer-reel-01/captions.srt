@@ -1,0 +1,59 @@
+1
+00:00:00,500 --> 00:00:03,874
+A diabetic patient  is coming for surgery.  What do you check?
+
+2
+00:00:05,504 --> 00:00:09,158
+Half of all diabetic patients  will need surgery  in their lifetime.
+
+3
+00:00:09,558 --> 00:00:12,458
+Type one  makes no insulin.  Type two  resists it.
+
+4
+00:00:12,858 --> 00:00:17,980
+Fasting glucose  above one hundred twenty-six  is hyperglycemia,  risking ketoacidosis.
+
+5
+00:00:18,379 --> 00:00:22,747
+Before surgery,  call the physician:  how well controlled,  and any complications?
+
+6
+00:00:23,147 --> 00:00:27,257
+Screen the heart  with an EKG  The risk of silent ischemia  is higher.
+
+7
+00:00:27,657 --> 00:00:31,338
+Autonomic neuropathy  links to silent heart attacks  and sudden death.
+
+8
+00:00:31,737 --> 00:00:35,618
+Gastroparesis  delays stomach emptying,  raising the risk  of aspiration.
+
+9
+00:00:36,018 --> 00:00:40,394
+Diet-controlled,  minor procedure?  Glucose under two hundred  needs no change.
+
+10
+00:00:40,794 --> 00:00:47,194
+Major surgery  means over one hour of anesthesia,  or glucose above two hundred.  Monitor hourly,  and give insulin.
+
+11
+00:00:47,594 --> 00:00:52,737
+Surgical stress  can tip stable patients  onto insulin.  Then manage them  as type one.
+
+12
+00:00:53,137 --> 00:00:57,140
+Oral drugs:  first-generation sulfonylureas  stop three days before.
+
+13
+00:00:57,540 --> 00:01:01,027
+Second-generation  can continue  until the morning of surgery.
+
+14
+00:01:01,427 --> 00:01:05,665
+Metformin and glitazones  stop the night before,  for lactic acidosis risk.
+
+15
+00:01:06,635 --> 00:01:11,787
+Assess control.  Screen the heart.  Time the drugs by class.  Save this for your next surgical case.
