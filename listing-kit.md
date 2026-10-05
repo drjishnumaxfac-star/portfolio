@@ -118,3 +118,17 @@ You asked for listings that mostly show the clinical services, with SketchRoot a
 - Founder line: Founded by Dr. Jishnu Mohan, an oral and maxillofacial surgeon in Kochi (https://doctorj.in).
 
 I won't add feature claims, exam names or pricing figures until you confirm them. Remaining to confirm: the official launch date, and that the 50% applies to the subscription price.
+
+## Update 3: confirmed SketchRoot facts and assets
+
+- **Offer:** 50% off the subscription price, for 6 months from official launch.
+- **Launch:** early 2027. Listings should say "launching early 2027", with no exact date or "live now". Choose "coming soon" or "pre-launch" where a directory has the option.
+- **Exams shown in your artwork:** INBDE, INI-CET, NEET MDS. Subject areas shown: basic sciences, preclinical, oral medicine and radiology, conservative and endodontics, prosthodontics, pedodontics, periodontics, OMFS, orthodontics, research and evidence.
+- **Tagline from your artwork:** "Memory Redrawn, Dentistry Visualised".
+- **Images added:** `sketchroot-exam-journey-map.png` (1672x941, 16:9, usable as the cover or a screenshot) and `sketchroot-ramus-osteotomies-kada.png` (1774x887, an osteotomy mnemonic sample). They are illustrations, not app screenshots. Label them "sample study visuals", and add real app screenshots when they exist.
+- **Claim caution:** the journey map shows an "AIR 1" flag. Your verified AIR 1 is the AIIMS PhD entrance (2025), not NEET MDS or INI-CET, so keep that flag out of listing copy.
+- **Favicon:** I have no stored favicon in memory. I used the site's own: `listing-assets/favicon-48x48.png` and `apple-touch-icon.png` (180 px). The SketchRoot site's own favicon is not in this repo.
+
+Draft SketchRoot copy:
+- Tagline: `Memory Redrawn, Dentistry Visualised`
+- Description (~160): SketchRoot is a visual recall study tool for dental exam preparation (INBDE, INI-CET, NEET MDS). Launching early 2027. Early access: 50% off for 6 months.
