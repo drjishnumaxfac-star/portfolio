@@ -113,7 +113,8 @@ You asked for listings that mostly show the clinical services, with SketchRoot a
 - Tagline (~40): `Visual recall for dental exam prep`
 - Tagline (~60): `Visual recall study tool for dental exam preparation`
 - Description (~160): SketchRoot is a visual recall study tool for dental exam preparation, built by a practising oral and maxillofacial surgeon. Early access is open with 50% off.
-- Offer line: `Early access registration: 50% off at sketchroot.com`
+- Offer line: `Early access registration: 50% off for 6 months from official launch, at sketchroot.com`
+- Offer terms (confirmed by you): 50% discount for early-access registrants, valid for 6 months from the official launch date. The launch date and what the 50% applies to (subscription price) are still to be confirmed. Do not write a calendar end date until the launch date is set.
 - Founder line: Founded by Dr. Jishnu Mohan, an oral and maxillofacial surgeon in Kochi (https://doctorj.in).
 
-I won't add feature claims, exam names or pricing figures until you confirm them. The 50% applies to what price, for how long, and until when?
+I won't add feature claims, exam names or pricing figures until you confirm them. Remaining to confirm: the official launch date, and that the 50% applies to the subscription price.
