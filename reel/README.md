@@ -24,18 +24,18 @@ npx remotion render src/index.ts SketchRootLaunch out/sketchroot-launch-reel.mp4
 
 | Path | What |
 |---|---|
-| `src/SketchRootLaunch.tsx` | Main composition: background, 10 scene sequences, cut flashes, music |
+| `src/SketchRootLaunch.tsx` | Main composition: background, 12 scene sequences, cut flashes, music |
 | `src/scenes/Act1.tsx` | Hook (ranks) · open loop · problem · forgetting curve · logo reveal |
 | `src/scenes/Act2.tsx` | Memory palace · one scene · one platform · website demo |
 | `src/scenes/Act3.tsx` | Follow + DM Instagram mock · first-5,000 golden pass · ATTENTION verification + 3-step CTA |
 | `src/components.tsx` | Background, sparkles, kinetic words, animated SketchRoot wordmark |
 | `src/anim.ts` | Springs plus Disney-style helpers: squash & stretch, anticipation, shake |
 | `src/timing.ts` | Scene boundaries on phrase downbeats, and the beat pulse |
-| `src/beats.json` | Beat map from `npx hyperframes beats beatmap` |
+| `src/beats-launch.json` | Beat map from `npx hyperframes beats beatmap-launch` (extended track) |
 | `src/logoData.ts` | SketchRoot wordmark glyphs, extracted from `content/index.html` |
 | `beatmap/` | Minimal HyperFrames project used only to detect the beats in the music |
 | `public/img/` | Founder portrait and SketchRoot illustration stills |
-| `public/music.m4a` | Soundtrack (rights held by the owner) |
+| `public/music.m4a` | Soundtrack (rights held by the owner); `music-launch.m4a` is the 68.8 s cut used by the reel |
 
 ## Method-of-loci explainer (`LociExplainer`)
 
