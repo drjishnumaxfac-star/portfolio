@@ -21,6 +21,23 @@ export const FONT = {
   sans: '"Inter", system-ui, sans-serif',
   serif: '"Playfair Display", Georgia, serif',
   mono: '"JetBrains Mono", ui-monospace, monospace',
+  hand: '"Caveat", "Comic Sans MS", cursive',
+  script: '"Dancing Script", cursive',
+};
+
+/** Light "paper" palette for the explainer, matched to the SketchRoot logo reveal (#fcfcfc / #211f20 / #f9b930). */
+export const P = {
+  paper: '#f8f4ec',
+  paper2: '#efe8da',
+  white: '#fdfcf9',
+  ink: '#211f20',
+  ink2: '#4a4546',
+  dim: '#8a837c',
+  amber: '#f9b930',
+  amberDeep: '#e3a11a',
+  terracotta: '#c25f38',
+  sea: '#9fb7c4',
+  sage: '#8f9f7e',
 };
 
 const faces: Array<[string, string, string, string]> = [
@@ -32,6 +49,8 @@ const faces: Array<[string, string, string, string]> = [
   ['Playfair Display', 'playfair-display-latin-800-italic.woff2', '800', 'italic'],
   ['Playfair Display', 'playfair-display-latin-900-italic.woff2', '900', 'italic'],
   ['JetBrains Mono', 'jetbrains-mono-latin-500-normal.woff2', '500', 'normal'],
+  ['Caveat', 'caveat-latin-700-normal.woff2', '700', 'normal'],
+  ['Dancing Script', 'dancing-script-latin-600-normal.woff2', '600', 'normal'],
 ];
 
 let loaded = false;

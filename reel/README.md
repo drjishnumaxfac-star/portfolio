@@ -36,6 +36,23 @@ npx remotion render src/index.ts SketchRootLaunch out/sketchroot-launch-reel.mp4
 | `public/img/` | Founder portrait and SketchRoot illustration stills |
 | `public/music.m4a` | Soundtrack (rights held by the owner) |
 
+## Method-of-loci explainer (`LociExplainer`)
+
+An 80.7 s Vox-style explainer that teaches the method of loci and shows how SketchRoot applies it.
+The shot list, style system and fact sources are in [EXPLAINER.md](EXPLAINER.md).
+
+```
+npx remotion render src/index.ts LociExplainer out/sketchroot-method-of-loci.mp4
+```
+
+| Path | What |
+|---|---|
+| `src/explainer/vox.tsx` | Paper ground, 2.5D camera rig, cut-outs, highlighter, hand-drawn marks, pins, paper wipe |
+| `src/explainer/illustrations.tsx` | Original SVG art: house, banquet hall, seating plan, bust, brain, map, icons |
+| `src/explainer/Scenes.tsx` | The 14 scenes |
+| `src/explainer/LociExplainer.tsx` | Assembly, scene cuts on phrase downbeats, music |
+| `beatmap-explainer/` | HyperFrames project for the extended music bed (`public/music-explainer.m4a`) |
+
 ## Re-syncing to a different track
 1. Replace `public/music.m4a`.
 2. Run `npx hyperframes beats beatmap` and copy `beatmap/beats/music.m4a.json` to `src/beats.json`.

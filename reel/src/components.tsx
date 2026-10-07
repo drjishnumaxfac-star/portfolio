@@ -250,11 +250,12 @@ export const Kicker: React.FC<{text: string; delay?: number; color?: string; sty
 /* ------------------------------------------------------------------ */
 const GLYPH_X = [97, 235, 329, 414, 463, 596, 637, 744, 835, 936, 981, 948, 980, 980, 980];
 
-export const Logo: React.FC<{delay?: number; width?: number; stagger?: number; still?: boolean}> = ({
+export const Logo: React.FC<{delay?: number; width?: number; stagger?: number; still?: boolean; ink?: string}> = ({
   delay = 0,
   width = 900,
   stagger = 3,
   still = false,
+  ink = '#ffffff',
 }) => {
   const f = useCurrentFrame();
   const h = (width / 1080) * 390.858;
@@ -286,7 +287,7 @@ export const Logo: React.FC<{delay?: number; width?: number; stagger?: number; s
             }`}
           >
             {g.paths.map((pth, k) => (
-              <path key={k} transform={pth.t} fill={pth.f} d={pth.d} />
+              <path key={k} transform={pth.t} fill={pth.f === '#ffffff' ? ink : pth.f} d={pth.d} />
             ))}
             {g.eye && g.ellipse.length > 0
               ? (() => {
