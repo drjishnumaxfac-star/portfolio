@@ -22,8 +22,8 @@ export const SCENES = {
   palace: [sec[5], sec[6]],
   oneScene: [sec[6], sec[7]],
   platform: [sec[7], sec[8]],
-  website: [sec[8], sec[9]],
-  follow: [sec[9], sec[10]],
+  follow: [sec[8], sec[9]],
+  website: [sec[9], sec[10]],
   spots: [sec[10], sec[11]],
   verify: [sec[11], sec[12]],
 } as const;

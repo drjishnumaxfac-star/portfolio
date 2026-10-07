@@ -368,7 +368,7 @@ export const Website: React.FC<{duration: number}> = ({duration}) => {
   const phone = sp(f, 0, GLIDE);
   const url = 'sketchroot.com';
   const urlN = Math.floor(ease(f, 14, 32) * url.length);
-  const email = 'you@dentalcollege.in';
+  const email = 'yourname@gmail.com';
   const emN = Math.floor(ease(f, 62, 96, 0, 1, (x) => x) * email.length);
   const tapAt = 107;
   const done = f >= tapAt + 2;
@@ -382,7 +382,7 @@ export const Website: React.FC<{duration: number}> = ({duration}) => {
   return (
     <AbsoluteFill style={{opacity: out}}>
       <div style={{position: 'absolute', top: 200, width: '100%'}}>
-        <Words words={['Early', 'access', 'is', {t: 'open.', em: true}]} size={84} />
+        <Words words={['Step 2:', 'join', 'with', 'your', {t: 'Gmail.', em: true}]} size={70} />
       </div>
       <div style={{position: 'absolute', top: 330, left: 40, right: 40, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 12}}>
         {EXAMS.map((e, i) => {
@@ -519,6 +519,39 @@ export const Website: React.FC<{duration: number}> = ({duration}) => {
             FOUNDER · DR. JISHNU MOHAN · AIR 1 AIIMS PHD
           </div>
         </div>
+        {/* Gmail confirmation drops in */}
+        {f >= tapAt + 18 ? (
+          <div
+            style={{
+              position: 'absolute',
+              left: 20,
+              right: 20,
+              top: 20 + (1 - sp(f, tapAt + 18, BOUNCE)) * -200,
+              borderRadius: 26,
+              background: '#f6f4f1',
+              boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
+              padding: '18px 22px',
+              display: 'flex',
+              gap: 16,
+              alignItems: 'center',
+              fontFamily: FONT.sans,
+              color: '#202124',
+            }}
+          >
+            <svg width={56} height={42} viewBox="0 0 56 42">
+              <path d="M4 42V8l24 18L52 8v34H40V18L28 27 16 18v24z" fill="#ea4335" />
+              <path d="M4 8v34h12V18z" fill="#4285f4" />
+              <path d="M40 18v24h12V8z" fill="#34a853" />
+              <path d="M52 8 40 18V4l6-3a4 4 0 0 1 6 3z" fill="#fbbc04" />
+              <path d="M4 8 16 18V4L10 1a4 4 0 0 0-6 3z" fill="#c5221f" />
+            </svg>
+            <div style={{flex: 1}}>
+              <div style={{fontSize: 18, color: '#5f6368'}}>Gmail · now</div>
+              <div style={{fontWeight: 800, fontSize: 22}}>SketchRoot</div>
+              <div style={{fontSize: 20}}>You're on the early-access list ✓</div>
+            </div>
+          </div>
+        ) : null}
       </div>
       {/* fingertip */}
       {f >= 30 && f < tapAt + 14 ? (

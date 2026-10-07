@@ -1,6 +1,6 @@
 # SketchRoot launch reel
 
-The early-access launch reel for sketchroot.com (follow @doctorj.in, first 5,000 followers): 1080×1920 at 30 fps, 68.8 s, built in
+The early-access launch reel for sketchroot.com (Step 1 follow @doctorj.in, Step 2 Gmail sign-up; first 5,000 followers): 1080×1920 at 30 fps, 68.8 s, built in
 [Remotion](https://www.remotion.dev). Scene cuts are synced to a beat map produced by
 [HyperFrames](https://hyperframes.heygen.com). The shot-by-shot script, caption and
 hashtags are in [SCRIPT.md](SCRIPT.md).
@@ -26,8 +26,8 @@ npx remotion render src/index.ts SketchRootLaunch out/sketchroot-launch-reel.mp4
 |---|---|
 | `src/SketchRootLaunch.tsx` | Main composition: background, 12 scene sequences, cut flashes, music |
 | `src/scenes/Act1.tsx` | Hook (ranks) · open loop · problem · forgetting curve · logo reveal |
-| `src/scenes/Act2.tsx` | Memory palace · one scene · one platform · website demo |
-| `src/scenes/Act3.tsx` | Follow + DM Instagram mock · first-5,000 golden pass · ATTENTION verification + 3-step CTA |
+| `src/scenes/Act2.tsx` | Memory palace · one scene · one platform · Step 2 website + Gmail sign-up |
+| `src/scenes/Act3.tsx` | Step 1 Instagram follow mock · first-5,000 golden pass · ATTENTION verification + 3-step CTA |
 | `src/components.tsx` | Background, sparkles, kinetic words, animated SketchRoot wordmark |
 | `src/anim.ts` | Springs plus Disney-style helpers: squash & stretch, anticipation, shake |
 | `src/timing.ts` | Scene boundaries on phrase downbeats, and the beat pulse |

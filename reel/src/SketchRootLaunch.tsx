@@ -18,8 +18,8 @@ const ORDER: [SceneKey, React.FC<{duration: number}>][] = [
   ['palace', Palace],
   ['oneScene', OneScene],
   ['platform', Platform],
-  ['website', Website],
   ['follow', Follow],
+  ['website', Website],
   ['spots', Spots],
   ['verify', Verify],
 ];

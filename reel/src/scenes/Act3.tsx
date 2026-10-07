@@ -35,7 +35,7 @@ const Finger: React.FC<{path: {f: number; x: number; y: number}[]; taps: number[
 };
 
 /* ================================================================== */
-/* 10. FOLLOW + DM (51.12 – 57.17 s): an Instagram profile mock.        */
+/* STEP 1 · FOLLOW (45.13 – 51.12 s): Instagram profile mock -> bio link */
 /* ================================================================== */
 export const Follow: React.FC<{duration: number}> = ({duration}) => {
   const f = useCurrentFrame();
@@ -43,13 +43,11 @@ export const Follow: React.FC<{duration: number}> = ({duration}) => {
   const followTap = 40;
   const following = f >= followTap + 1;
   const fb = squash(f, followTap + 1, BOUNCE, 3);
-  const msgTap = 80;
-  const dm = ease(f, msgTap + 2, msgTap + 14, 0, 1, (t) => 1 - Math.pow(1 - t, 3));
-  const typed = 'EARLY ACCESS';
-  const n = Math.floor(ease(f, 100, 124, 0, 1, (t) => t) * typed.length);
-  const sendTap = 128;
-  const sent = f >= sendTap + 1;
-  const reply = f >= 148;
+  const linkTap = 92;
+  const linked = f >= linkTap + 1;
+  // tapping the bio link opens sketchroot.com in the in-app browser (slides up)
+  const web = ease(f, linkTap + 6, linkTap + 22, 0, 1, (t) => 1 - Math.pow(1 - t, 3));
+  const load = ease(f, linkTap + 22, linkTap + 70);
   const out = interpolate(f, [duration - 6, duration], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const floatY = Math.sin(f / 14) * 6;
   // phone geometry on canvas
@@ -58,12 +56,12 @@ export const Follow: React.FC<{duration: number}> = ({duration}) => {
   return (
     <AbsoluteFill style={{opacity: out}}>
       <div style={{position: 'absolute', top: 190, width: '100%'}}>
-        <Words words={['Follow', {t: '@doctorj.in', em: true}]} size={92} />
+        <Words words={['Step 1:', 'Follow', {t: '@doctorj.in', em: true}]} size={80} />
       </div>
       <div style={{position: 'absolute', top: 318, width: '100%', display: 'flex', justifyContent: 'center', gap: 16, fontFamily: FONT.sans, fontWeight: 800, fontSize: 32}}>
         {[
-          {t: '1  Follow', at: 6, on: following},
-          {t: '2  DM “EARLY ACCESS”', at: 12, on: sent},
+          {t: '1  Follow on Instagram', at: 6, on: following},
+          {t: '2  Early access →', at: 12, on: linked},
         ].map((s) => (
           <div
             key={s.t}
@@ -114,7 +112,10 @@ export const Follow: React.FC<{duration: number}> = ({duration}) => {
             <div>🥇 AIR 1 AIIMS PhD 🏆 AIR 37 NEET MDS 🎯 AIR 91 INI-CET</div>
             <div>OMFS Surgeon (PGI) | Founder SketchRoot™ 🎨</div>
             <div>Patient referrals: doctorj.in 👇</div>
-            <div style={{fontWeight: 700, marginTop: 4}}>🔗 sketchroot.com and 1 more</div>
+            <div style={{fontWeight: 700, marginTop: 4}}>
+              🔗{' '}
+              <span style={{color: linked ? C.amber : IG.text, background: linked ? `${C.amber}22` : 'transparent', borderRadius: 6, padding: '0 4px'}}>sketchroot.com</span> and 1 more
+            </div>
           </div>
           {/* in place of the follower count: the early-access offer */}
           <div
@@ -161,97 +162,48 @@ export const Follow: React.FC<{duration: number}> = ({duration}) => {
             ))}
           </div>
         </div>
-        {/* DM screen slides over */}
+        {/* in-app browser opens sketchroot.com */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: IG.bg,
-            transform: `translateX(${(1 - dm) * 100}%)`,
+            background: C.ink,
+            transform: `translateY(${(1 - web) * 100}%)`,
             fontFamily: FONT.sans,
-            color: IG.text,
+            color: C.cream,
+            borderTop: `2px solid ${C.amber}55`,
           }}
         >
-          <div style={{display: 'flex', alignItems: 'center', gap: 18, padding: '70px 30px 20px', borderBottom: '1px solid #262a30'}}>
-            <span style={{fontSize: 34}}>‹</span>
-            <Img src={staticFile('img/founder.jpg')} style={{width: 70, height: 70, borderRadius: '50%', objectFit: 'cover'}} />
+          <div style={{padding: '60px 30px 18px', display: 'flex', alignItems: 'center', gap: 14, borderBottom: '1px solid #2a2622'}}>
+            <span style={{fontSize: 30}}>✕</span>
             <div>
-              <div style={{fontWeight: 800, fontSize: 28}}>Dr. Jishnu Mohan</div>
-              <div style={{fontSize: 22, color: IG.sub}}>{handle}</div>
+              <div style={{fontWeight: 800, fontSize: 26}}>SketchRoot</div>
+              <div style={{fontSize: 20, color: C.dim}}>🔒 sketchroot.com</div>
             </div>
           </div>
-          <div style={{position: 'absolute', left: 30, right: 30, top: 230, display: 'flex', flexDirection: 'column', gap: 16}}>
-            {sent ? (
-              <div
-                style={{
-                  alignSelf: 'flex-end',
-                  background: 'linear-gradient(135deg, #6b4dff, #4a5df9)',
-                  padding: '18px 26px',
-                  borderRadius: 30,
-                  fontWeight: 800,
-                  fontSize: 30,
-                  transform: `scale(${sp(f, sendTap + 1, BOUNCE)})`,
-                  transformOrigin: '100% 100%',
-                }}
-              >
-                EARLY ACCESS 🦷
-              </div>
-            ) : null}
-            {reply ? (
-              <div
-                style={{
-                  alignSelf: 'flex-start',
-                  maxWidth: 440,
-                  background: IG.card,
-                  padding: '18px 24px',
-                  borderRadius: 30,
-                  fontSize: 26,
-                  lineHeight: 1.3,
-                  transform: `scale(${sp(f, 148, BOUNCE)})`,
-                  transformOrigin: '0 100%',
-                }}
-              >
-                Got it 👋 Early-access updates will come right here.
-              </div>
-            ) : null}
+          <div style={{height: 5, background: '#2a2622'}}>
+            <div style={{height: 5, width: `${load * 100}%`, background: C.amber}} />
           </div>
-          <div
-            style={{
-              position: 'absolute',
-              left: 24,
-              right: 24,
-              bottom: 40,
-              height: 80,
-              borderRadius: 40,
-              background: IG.card,
-              display: 'flex',
-              alignItems: 'center',
-              padding: '0 28px',
-              fontSize: 28,
-              color: n && !sent ? IG.text : IG.sub,
-            }}
-          >
-            {n && !sent ? typed.slice(0, n) : 'Message…'}
-            {!sent && f > 96 && f % 16 < 8 ? <span style={{color: IG.blue}}>|</span> : null}
-            <span style={{marginLeft: 'auto', color: IG.blue, fontWeight: 800}}>Send</span>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 120, opacity: ease(f, linkTap + 24, linkTap + 34)}}>
+            <Logo width={440} still />
+            <div style={{fontFamily: FONT.mono, fontSize: 22, color: C.amber, letterSpacing: '0.2em', marginTop: 30}}>OPENING EARLY ACCESS…</div>
           </div>
         </div>
       </div>
       <Finger
         from={24}
-        to={sendTap + 12}
-        taps={[followTap, msgTap, sendTap]}
+        to={linkTap + 12}
+        taps={[followTap, linkTap]}
         path={[
           {f: 24, x: 900, y: 1500},
           {f: 38, x: PX + 165, y: PY + 640},
           {f: 60, x: PX + 165, y: PY + 640},
-          {f: 78, x: PX + 430, y: PY + 640},
-          {f: 96, x: PX + 430, y: PY + 640},
-          {f: 126, x: PX + 500, y: PY + 1005},
+          {f: 88, x: PX + 205, y: PY + 477},
+          {f: 104, x: PX + 205, y: PY + 477},
         ]}
       />
       {following ? <Burst x={PX + 165} y={PY + 640} delay={followTap + 1} radius={240} count={10} /> : null}
-      {sent ? <Burst x={PX + 420} y={PY + 260} delay={sendTap + 1} radius={200} count={8} /> : null}
+      {linked ? <Burst x={PX + 205} y={PY + 477} delay={linkTap + 1} radius={180} count={8} /> : null}
     </AbsoluteFill>
   );
 };
@@ -361,7 +313,7 @@ export const Spots: React.FC<{duration: number}> = ({duration}) => {
 /* ================================================================== */
 const STEPS3 = [
   {t: 'Follow @doctorj.in', at: 64},
-  {t: 'DM “EARLY ACCESS”', at: 80},
+  {t: 'Join early access with your Gmail at sketchroot.com', at: 80},
   {t: 'Get verified → priority access', at: 96},
 ];
 
