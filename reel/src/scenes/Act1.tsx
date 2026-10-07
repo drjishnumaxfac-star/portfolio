@@ -203,7 +203,7 @@ export const OpenLoop: React.FC<{duration: number}> = ({duration}) => {
       ) : null}
       {f >= drop ? <Burst x={540} y={1180} delay={drop} radius={420} count={10} /> : null}
       <div style={{position: 'absolute', top: 1380, width: '100%', opacity: ease(f, drop + 26, drop + 40)}}>
-        <Kicker text="here's the method" delay={drop + 26} />
+        <Kicker text="watch till the end · 5,000 spots" delay={drop + 26} />
       </div>
       <Sparkle x={300} y={330} delay={14} />
       <Sparkle x={800} y={720} delay={24} size={34} color={C.cream} />

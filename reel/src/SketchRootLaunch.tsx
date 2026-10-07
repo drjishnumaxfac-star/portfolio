@@ -1,7 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, Audio, interpolate, Sequence, staticFile} from 'remotion';
 import {Background, CutFlash} from './components';
-import {Cta, OneScene, Palace, Platform, Website} from './scenes/Act2';
+import {OneScene, Palace, Platform, Website} from './scenes/Act2';
+import {Follow, Spots, Verify} from './scenes/Act3';
 import {Forgetting, Hook, OpenLoop, Problem, Reveal} from './scenes/Act1';
 import {loadFonts} from './theme';
 import {SceneKey, sceneFrames, TOTAL_FRAMES} from './timing';
@@ -18,7 +19,9 @@ const ORDER: [SceneKey, React.FC<{duration: number}>][] = [
   ['oneScene', OneScene],
   ['platform', Platform],
   ['website', Website],
-  ['cta', Cta],
+  ['follow', Follow],
+  ['spots', Spots],
+  ['verify', Verify],
 ];
 
 export const SketchRootLaunch: React.FC = () => (
@@ -36,7 +39,7 @@ export const SketchRootLaunch: React.FC = () => (
       <CutFlash key={key} at={sceneFrames(key).from} />
     ))}
     <Audio
-      src={staticFile('music.m4a')}
+      src={staticFile('music-launch.m4a')}
       volume={(f) => interpolate(f, [TOTAL_FRAMES - 20, TOTAL_FRAMES], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}
     />
   </AbsoluteFill>
