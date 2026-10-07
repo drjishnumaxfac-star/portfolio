@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Audio, interpolate, Sequence, staticFile} from 'remotion';
 import {Background, CutFlash} from './components';
 import {OneScene, Palace, Platform, Website} from './scenes/Act2';
-import {Follow, Spots, Verify} from './scenes/Act3';
+import {Dm, Follow, Spots, Verify} from './scenes/Act3';
 import {Forgetting, Hook, OpenLoop, Problem, Reveal} from './scenes/Act1';
 import {loadFonts} from './theme';
 import {SceneKey, sceneFrames, TOTAL_FRAMES} from './timing';
@@ -19,6 +19,7 @@ const ORDER: [SceneKey, React.FC<{duration: number}>][] = [
   ['oneScene', OneScene],
   ['platform', Platform],
   ['follow', Follow],
+  ['dm', Dm],
   ['website', Website],
   ['spots', Spots],
   ['verify', Verify],

@@ -3,15 +3,15 @@ import {FPS} from './theme';
 
 /**
  * Beat map produced by `npx hyperframes beats beatmap-launch` for public/music-launch.m4a:
- * the original track (0–51.16 s) followed by its 39.04 s phrase again, crossfaded on the downbeat.
+ * the original track (0–51.16 s) followed by its 33.04 s phrase onward again, crossfaded on the downbeat.
  * Phrase downbeats land at ~3.12 + 6n s, with the drop at ~7.2 s. Every scene cut sits on one.
  */
 export const BEATS: {time: number; strength: number}[] = beatsJson.beats;
 
-export const MUSIC_SECONDS = 68.77;
+export const MUSIC_SECONDS = 74.77;
 export const TOTAL_FRAMES = Math.round(MUSIC_SECONDS * FPS);
 
-const sec = [0, 3.12, 9.12, 15.13, 21.12, 27.12, 33.12, 39.08, 45.13, 51.12, 57.17, 63.17, MUSIC_SECONDS];
+const sec = [0, 3.12, 9.12, 15.13, 21.12, 27.12, 33.12, 39.08, 45.13, 51.12, 57.17, 63.16, 69.16, MUSIC_SECONDS];
 
 export const SCENES = {
   hook: [sec[0], sec[1]],
@@ -23,9 +23,10 @@ export const SCENES = {
   oneScene: [sec[6], sec[7]],
   platform: [sec[7], sec[8]],
   follow: [sec[8], sec[9]],
-  website: [sec[9], sec[10]],
-  spots: [sec[10], sec[11]],
-  verify: [sec[11], sec[12]],
+  dm: [sec[9], sec[10]],
+  website: [sec[10], sec[11]],
+  spots: [sec[11], sec[12]],
+  verify: [sec[12], sec[13]],
 } as const;
 
 export type SceneKey = keyof typeof SCENES;

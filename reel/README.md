@@ -1,6 +1,6 @@
 # SketchRoot launch reel
 
-The early-access launch reel for sketchroot.com (Step 1 follow @doctorj.in, Step 2 Gmail sign-up; first 5,000 followers): 1080×1920 at 30 fps, 68.8 s, built in
+The early-access launch reel for sketchroot.com (Step 1 follow @doctorj.in, Step 2 DM "EARLY ACCESS", Step 3 Gmail sign-up; first 5,000 followers): 1080×1920 at 30 fps, 74.8 s, built in
 [Remotion](https://www.remotion.dev). Scene cuts are synced to a beat map produced by
 [HyperFrames](https://hyperframes.heygen.com). The shot-by-shot script, caption and
 hashtags are in [SCRIPT.md](SCRIPT.md).
@@ -24,10 +24,10 @@ npx remotion render src/index.ts SketchRootLaunch out/sketchroot-launch-reel.mp4
 
 | Path | What |
 |---|---|
-| `src/SketchRootLaunch.tsx` | Main composition: background, 12 scene sequences, cut flashes, music |
+| `src/SketchRootLaunch.tsx` | Main composition: background, 13 scene sequences, cut flashes, music |
 | `src/scenes/Act1.tsx` | Hook (ranks) · open loop · problem · forgetting curve · logo reveal |
-| `src/scenes/Act2.tsx` | Memory palace · one scene · one platform · Step 2 website + Gmail sign-up |
-| `src/scenes/Act3.tsx` | Step 1 Instagram follow mock · first-5,000 golden pass · ATTENTION verification + 3-step CTA |
+| `src/scenes/Act2.tsx` | Memory palace · one scene · one platform · Step 3 website + Gmail sign-up |
+| `src/scenes/Act3.tsx` | Step 1 follow + Step 2 DM follow-check mocks · first-5,000 golden pass · ATTENTION verification + 3-step CTA |
 | `src/components.tsx` | Background, sparkles, kinetic words, animated SketchRoot wordmark |
 | `src/anim.ts` | Springs plus Disney-style helpers: squash & stretch, anticipation, shake |
 | `src/timing.ts` | Scene boundaries on phrase downbeats, and the beat pulse |
@@ -35,7 +35,7 @@ npx remotion render src/index.ts SketchRootLaunch out/sketchroot-launch-reel.mp4
 | `src/logoData.ts` | SketchRoot wordmark glyphs, extracted from `content/index.html` |
 | `beatmap/` | Minimal HyperFrames project used only to detect the beats in the music |
 | `public/img/` | Founder portrait and SketchRoot illustration stills |
-| `public/music.m4a` | Soundtrack (rights held by the owner); `music-launch.m4a` is the 68.8 s cut used by the reel |
+| `public/music.m4a` | Soundtrack (rights held by the owner); `music-launch.m4a` is the 74.8 s cut used by the reel |
 
 ## Method-of-loci explainer (`LociExplainer`)
 
@@ -58,3 +58,5 @@ npx remotion render src/index.ts LociExplainer out/sketchroot-method-of-loci.mp4
 1. Replace `public/music.m4a`.
 2. Run `npx hyperframes beats beatmap` and copy `beatmap/beats/music.m4a.json` to `src/beats.json`.
 3. Adjust the phrase times in `src/timing.ts` (`sec`) and `MUSIC_SECONDS`.
+
+DM automation setup (keyword + follow check): see [INSTAGRAM-AUTOMATION.md](INSTAGRAM-AUTOMATION.md).

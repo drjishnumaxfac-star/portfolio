@@ -382,7 +382,7 @@ export const Website: React.FC<{duration: number}> = ({duration}) => {
   return (
     <AbsoluteFill style={{opacity: out}}>
       <div style={{position: 'absolute', top: 200, width: '100%'}}>
-        <Words words={['Step 2:', 'join', 'with', 'your', {t: 'Gmail.', em: true}]} size={70} />
+        <Words words={['Step 3:', 'join', 'with', 'your', {t: 'Gmail.', em: true}]} size={70} />
       </div>
       <div style={{position: 'absolute', top: 330, left: 40, right: 40, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 12}}>
         {EXAMS.map((e, i) => {
